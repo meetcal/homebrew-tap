@@ -24,15 +24,8 @@ class Meetcal < Formula
   end
 
   def install
-    platform_dir = if OS.mac?
-      Hardware::CPU.arm? ? "darwin-arm64" : "darwin-x64"
-    elsif Hardware::CPU.arm?
-      "linux-arm64"
-    else
-      "linux-x64"
-    end
-
-    bin.install "#{platform_dir}/index" => "meetcal"
+    executable = File.exist?("index") ? "index" : Dir["*/index"].first
+    bin.install executable => "meetcal"
   end
 
   test do
