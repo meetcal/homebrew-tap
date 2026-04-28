@@ -6,20 +6,20 @@ class Meetcal < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/memohnsen/meetcal-cli/releases/download/v1.0.0/darwin-arm64.tar.gz"
-      sha256 "cb3a6640bf42e5ffc1f388e05e07f3478730d98600e932809ca6f6e433086883"
+      sha256 "d61ca36ef5486799414e213a137a4e284ca6641e22a127afa1835925087f9f7f"
     else
       url "https://github.com/memohnsen/meetcal-cli/releases/download/v1.0.0/darwin-x64.tar.gz"
-      sha256 "175c57ea20e6bb4917a364cfc2b8bcdca0e8d17d27816efc7d64be19d3ac5e01"
+      sha256 "30dacdd51f6a0732fe88b5bf629bcd3aecafc41855cc199312e8f5ec6c70e5f2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/memohnsen/meetcal-cli/releases/download/v1.0.0/linux-arm64.tar.gz"
-      sha256 "e9546f4d7af43c235f9218edeba0f3b724caeca1beea13bf306df680319bf5b8"
+      sha256 "efbacb33e7b301fe432c2017e2d473e8872e140c44328e8bb1d1b08e08873b2a"
     else
       url "https://github.com/memohnsen/meetcal-cli/releases/download/v1.0.0/linux-x64.tar.gz"
-      sha256 "ff04391cf0e089dfaeb569d6788d0dedecdd5a7af74d897e3dadc963ba1204f1"
+      sha256 "a1a895a1c554778cf61be87c77bbcc75fbee499962bf06ce900bbf5ed7eedaa2"
     end
   end
 
