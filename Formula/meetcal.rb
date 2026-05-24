@@ -6,20 +6,20 @@ class Meetcal < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/meetcal/meetcal-cli/releases/download/v1.0.0/darwin-arm64.tar.gz"
-      sha256 "74311505eab231e660a362be149226a5352fb1ba4e99125da7246a23fcc5b389"
+      sha256 "76f45dae199f6c49c2992340b0d7872e99ec2a9709287b82ad774884b8433739"
     else
       url "https://github.com/meetcal/meetcal-cli/releases/download/v1.0.0/darwin-x64.tar.gz"
-      sha256 "64b2b89959177644130f568cd61fc2646f1be4dc964b20f503efb40234dc26f6"
+      sha256 "7b710ee420cc693cd79ce8f48f0d004f1840ea269b4049c9eea5d1d9b6012ede"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/meetcal/meetcal-cli/releases/download/v1.0.0/linux-arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "72b2992233fde958254772f88eb21deb7a82a96790e37821beaeb7aa54b5db33"
     else
       url "https://github.com/meetcal/meetcal-cli/releases/download/v1.0.0/linux-x64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "4579359057cc2b43851ef9d4dc0f6655f16b3e280d3e44918db852569b70e627"
     end
   end
 
