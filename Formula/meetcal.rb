@@ -1,25 +1,25 @@
 class Meetcal < Formula
   desc "CLI for querying MeetCal lifting data"
   homepage "https://github.com/meetcal/meetcal-app/tree/master/cli"
-  version "4.0.0"
+  version "4.0.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/meetcal/meetcal-app/releases/download/cli-v4.0.0/darwin-arm64.tar.gz"
-      sha256 "f5eea13de90e32a02b012a5c542b79daf5fdfd79ad93a386c0f33aca8649bbe0"
+      url "https://github.com/meetcal/meetcal-app/releases/download/cli-v4.0.1/darwin-arm64.tar.gz"
+      sha256 "0374ab0453f89afc8cd7db73f097293f3c125ebccab61aa1f6c83188eb3edd18"
     else
-      url "https://github.com/meetcal/meetcal-app/releases/download/cli-v4.0.0/darwin-x64.tar.gz"
-      sha256 "471f525765d3b991c5ebfe7efac298a9cbd861f3a2220638ff75da6059115dd0"
+      url "https://github.com/meetcal/meetcal-app/releases/download/cli-v4.0.1/darwin-x64.tar.gz"
+      sha256 "619144a88769b3d251da92519e1523ca37710d570a1f1e86f6742edb596e4811"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/meetcal/meetcal-app/releases/download/cli-v4.0.0/linux-arm64.tar.gz"
-      sha256 "de29a70c1e39f87b4418608102c13ea5e423bdf53b9e9dd33372cf78e18a68cc"
+      url "https://github.com/meetcal/meetcal-app/releases/download/cli-v4.0.1/linux-arm64.tar.gz"
+      sha256 "a869801fa7c546d06e44d1a6b6523cfc340412440ab35a4cf3d570691bd35418"
     else
-      url "https://github.com/meetcal/meetcal-app/releases/download/cli-v4.0.0/linux-x64.tar.gz"
-      sha256 "25f5451dfb64efa03cc7dbcf3e63e8e9be7e6377f30254e334478d64a1328d44"
+      url "https://github.com/meetcal/meetcal-app/releases/download/cli-v4.0.1/linux-x64.tar.gz"
+      sha256 "71bca2f516d31c32ccf11653c9ae79af54ba085040cf65bcea5a00fa66e6bf63"
     end
   end
 
